@@ -1,6 +1,6 @@
 import { galleryItems } from './gallery-items.js';
 // Change code below this line
-
+// перебір та створення + додавання
 const gallery = document.querySelector('.gallery');
 const galleryArr = iteamsGallery(galleryItems);
 function iteamsGallery(galleryItems) {
@@ -21,6 +21,8 @@ function iteamsGallery(galleryItems) {
 gallery.insertAdjacentHTML('beforeend', galleryArr);
 
 gallery.addEventListener('click', onOpenModal);
+
+// відкриття + закриття картинки
 
 function onOpenModal(event) {
     event.preventDefault();
